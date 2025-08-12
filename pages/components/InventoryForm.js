@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { supabase } from '../lib/supabaseClient';
+import { supabase } from '/lib/supabaseClient';
 
 export default function InventoryForm({ onSaved }) {
   const [form, setForm] = useState({ model: '', color: '', gender: 'Unisex', size: 36, price: '', cost: '', quantity: 1, notes: '' });
