@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { supabase } from '@/lib/supabaseClient';
+import { supabase } from '../lib/supabaseClient';
 
 export default function Dashboard({ refresh }){
   const [data, setData] = useState({ totalStock:0, totalProducts:0, soldThisMonth:0, topModels:[] });
